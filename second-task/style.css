@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 5px;
+    height: 50%;
+    border: 2px solid rgba(170, 170, 170, 0.712);
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    clip-path: circle();
+    background-color: #00ff00;
+}
+
+.triangle {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+@media screen and (min-width:728px) {
+    .square {
+        width: 50%;
+        max-width: 100%;
+    }
+}
