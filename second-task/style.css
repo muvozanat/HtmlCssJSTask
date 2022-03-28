@@ -18,7 +18,7 @@ body {
     margin: 0 auto;
     max-width: 90%;
     padding: 5px;
-    height: 50%;
+    height: 200px;
     border: 2px solid rgba(170, 170, 170, 0.712);
 }
 
@@ -26,14 +26,13 @@ body {
     width: 100px;
     height: 100px;
     clip-path: circle();
-    background-color: #00ff00;
+    background-color: #ff0000;
 }
 
-.triangle {
+.square__in {
     width: 100px;
     height: 100px;
-    background-color: #ff0000;
-    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    background-color: #0f4101;
 }
 
 @media screen and (min-width:728px) {
