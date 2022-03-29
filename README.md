@@ -1,6 +1,6 @@
 ## First task: Create google clone
 [View 1-task](https://muvozanat.github.io/HtmlCssJSTask/first-task/)
-## Second task: Made circle and square
+## Second task: Create circle and square
 [View 2-task](https://muvozanat.github.io/HtmlCssJSTask/second-task/)
 ## Third task: Create Responsive PORTFOLIO UI website
 [View 3-task](https://muvozanat.github.io/HtmlCssJSTask/third-task/) <br>
