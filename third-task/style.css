@@ -47,17 +47,18 @@ nav li>a {
     text-decoration: none;
     padding-left: 40px;
     color: var(--color-link);
-}
-
-.header nav a {
-    font-weight: 500;
+    font-weight: 800;
+    font-family: 'Heebo';
+    font-style: normal;
+    width: 100%;
+    margin: 0 10px;
+    transition: all .7s;
 }
 
 .main {
     width: 100%;
     margin-top: 3rem;
     display: flex;
-    /* justify-content: space-between; */
     flex-flow: row wrap;
 }
 
@@ -70,12 +71,18 @@ nav li>a {
 
 .part1 h1 {
     font-size: 44px;
+    font-family: 'Heebo';
+    font-style: normal;
     font-weight: 700;
     width: 70%;
     margin: 1rem 0;
 }
 
 .part1 p {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
     width: 70%;
     margin: 1rem 0;
 }
@@ -106,7 +113,92 @@ nav li>a {
 
 .posts {
     margin: 100px 0;
+    padding: 1rem 0;
     background-color: #EDF7FA;
+}
+
+
+/* POST */
+
+.title {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h4 {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+}
+
+.title a {
+    text-decoration: none;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-secondary);
+}
+
+.post-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0 35px 0;
+    width: 100%;
+}
+
+.post-item {
+    padding: 15px;
+    max-width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-bottom: 10px;
+    line-height: 32px;
+}
+
+.post-item h3 {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    width: 81%;
+    margin: 19px 0;
+    color: var(--color-dark);
+}
+
+.post-item p {
+    width: 81%;
+    margin: 5px 0 15px 0;
+    color: var(--color-dark);
+}
+
+.post-item div {
+    margin: 13px 0;
+}
+
+span.post__date {
+    font-family: 'Heebo';
+    font-style: normal;
+    color: var(--color-dark);
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 13px;
+}
+
+span.line__y {
+    width: 120px;
+    height: 110px;
+    border: 1px solid var(--color-link);
+    max-width: 100%;
+    margin: 0 15px;
+    /* color: var(--color-dark); */
+    background-color: var(--color-link);
 }
 
 
@@ -117,7 +209,6 @@ nav li>a {
         width: 20px;
         height: auto;
         z-index: 2;
-        overflow: hidden;
     }
     .line {
         width: 100%;
@@ -130,7 +221,8 @@ nav li>a {
         transform: translateY(5px) rotate(45deg);
     }
     .line.x:nth-child(2) {
-        transform: translateX(60px);
+        transition: all .7s;
+        max-width: 0px;
     }
     .line.x:nth-child(3) {
         transition: all .7s;
@@ -142,9 +234,9 @@ nav li>a {
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 50%;
+        height: 49%;
         left: 0;
-        top: -400px;
+        top: -600px;
         transition: all .8s;
         background-color: var(--color-light);
         line-height: 50px;
@@ -152,10 +244,6 @@ nav li>a {
     .header nav ul.open {
         transition: all .8s;
         top: 0;
-    }
-    .nav ul li {
-        width: 350px;
-        height: 20px;
     }
     .header nav ul li a {
         padding: 10px 20px;
@@ -173,6 +261,11 @@ nav li>a {
         align-items: center;
         text-align: center;
     }
+    .part1 h1 {
+        font-size: 36px;
+        width: 100%;
+        margin: 1rem 0;
+    }
     .main {
         flex-flow: column-reverse;
     }
@@ -183,5 +276,27 @@ nav li>a {
     }
     .part2 img {
         width: 170px;
+    }
+    /* POST */
+    .title {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title a {
+        display: none;
+    }
+    .post-items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .post-item {
+        width: 100%;
+    }
+    .post-item h3,
+    .post-item p {
+        width: 100%;
     }
 }
