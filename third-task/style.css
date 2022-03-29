@@ -303,7 +303,7 @@ footer {
 .footer__item .fa-twitter,
 .footer__item .fa-linkedin {
     color: var(--color-dark);
-    font-size: rem;
+    font-size: 2.5rem;
 }
 
 
