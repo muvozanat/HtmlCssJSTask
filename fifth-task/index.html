@@ -16,42 +16,95 @@
 </head>
 
 <body>
+    <!-- HEAD -->
     <header class=" bg-light">
-        <!-- Without background navbar, dark hamburger, brand and nav-links justify content between inside container -->
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar py-3 navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid ">
                     <!-- d-flex justify-content-between -->
-                        <a class="navbar-brand" href="#">Navbar</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 text-center mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">ГЛАВНАЯ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">ОБ АВТОРЕ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">РАБОТЫ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">ПРОЦЕСС</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">КОНТАКТЫ</a>
-                                </li>
+                    <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 text-center mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">ГЛАВНАЯ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ОБ АВТОРЕ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">РАБОТЫ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ПРОЦЕСС</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">КОНТАКТЫ</a>
+                            </li>
                     </div>
 
 
                 </div>
             </nav>
         </div>
+        <div class="container my-5">
+            <!-- 2 column sd width 100% and space-evenly -->
+            <div class="row offset-0  offset-md-1 py-5 d-flex justify-content-between">
+                <div class="col-sd-12 col-md-4   d-flex justify-content-center">
+                    <img src="./img/header.png" alt="photo">
+                </div>
+                <div class="col-sd-12 col-md-6 text-height-0">
+                    <h1 class="fs-1 mb-4 mt-2 text-center text-md-start mt-md-0">Дизайн и верстка</h1>
+                    <p class="text-justify lh-lg py-1 text-center text-md-start">Lorem Ipsum - это текст-"рыба", часто
+                        используемый в печати и
+                        вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                    <div class="text-center text-md-start"><button class="btn btn-dark-blue-custom"><a href="#"
+                                class="text-white text-decoration-none py-2 px-4">НАПИСАТЬ МНЕ</a> </button></div>
+                </div>
+            </div>
     </header>
+    <!-- HEAD / -->
+    <!-- ABOUT WE -->
+    <section id="about" class=" my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pt-5">
+                    <h3 class="text-center text-black">О НАС</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex pb-5 mt-3 align-items-center justify-content-center">
+                    <div class="col-12 col-md-5">
+                        <p class="text-justify mt-0 text-center text-dark-blue-custom">Lorem Ipsum - это текст-"рыба", часто
+                            используемый в печати и
+                            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-dark-blue-custom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="img__icon">
+                            <img src="./img/icon1.png" alt="icon">
+                        </div>
+                        <div class="text__icon">
+                            <span class="text-white">40+</span>
+                            <p class="text-white">Дизайн и верстка</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <!-- ABOUT WE / -->
+
 </body>
 
 </html>
